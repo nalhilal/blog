@@ -1,5 +1,6 @@
 ---
 toc: false
+comments: true
 layout: post
 description: Why I started learning data science.
 categories: [markdown]
