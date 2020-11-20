@@ -4,8 +4,6 @@ title: Machine Learning Glossary
 permalink: /mlglossary/
 ---
 
-# Machine Learning Glossary
-
 *This machine learning glossary is a collection of definitions curated from different sources.*
 
 **Convolutional Neural Network (CNN)**
