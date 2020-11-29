@@ -27,6 +27,4 @@ When I looked at my prediction results on the test data I found that the results
 
 After much research into the issue, it turns out that RandomForrest has a regression and classification architecture, and I was using the regression mode which produced floating points instead of integers. After much further editing, and weeks since I had begun working on the competition I finally managed to submit and receive a score of 0.7, which wasn't bad at all in my opinion, I was still in the low-scoring end but at least I managed to get it up from 0 which is an accomplishment in itself.
 
-I do plan on working more on it and at least get a score in the 0.80s or 0.90s but we shall see! 
-
-The experience has so far been a success and I believe the persistence to learn and get better always yields positive results.   
+I do plan on working more on it and at least get a score in the 0.80s or 0.90s but we shall see! The experience has so far been a success and I believe the persistence to learn and get better always yields positive results.   
