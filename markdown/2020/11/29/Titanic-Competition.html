@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>The Titanic Competition | Journey into Data Science</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="The Titanic Competition" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="My experience with the Titanic Competition on Kaggle." />
+<meta property="og:description" content="My experience with the Titanic Competition on Kaggle." />
+<link rel="canonical" href="https://nalhilal.github.io/blog/markdown/2020/11/29/Titanic-Competition.html" />
+<meta property="og:url" content="https://nalhilal.github.io/blog/markdown/2020/11/29/Titanic-Competition.html" />
+<meta property="og:site_name" content="Journey into Data Science" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-29T00:00:00-06:00" />
+<script type="application/ld+json">
+{"description":"My experience with the Titanic Competition on Kaggle.","url":"https://nalhilal.github.io/blog/markdown/2020/11/29/Titanic-Competition.html","@type":"BlogPosting","headline":"The Titanic Competition","dateModified":"2020-11-29T00:00:00-06:00","datePublished":"2020-11-29T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://nalhilal.github.io/blog/markdown/2020/11/29/Titanic-Competition.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://nalhilal.github.io/blog/feed.xml" title="Journey into Data Science" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Journey into Data Science</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/mlglossary/">Machine Learning Glossary</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">The Titanic Competition</h1><p class="page-description">My experience with the Titanic Competition on Kaggle.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-11-29T00:00:00-06:00" itemprop="datePublished">
+        Nov 29, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#markdown">markdown</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="the-titanic-competition">The Titanic Competition</h1>
+
+<p>The titanic competition on Kaggle is one of the most popular starting point for many data scientists to tinker, explore, and apply what they have learned in a somewhat real context (that claim is merely an educated guess). I created an account on Kaggle and went ahead to look at the competition. I realized that there may be more to it than just applying what I had learned on the fastai course.</p>
+
+<p>I did the next most natural thing, which is to learn how data science is done on Kaggle! I explored the learning resources and courses on there and found that most of what I had learned through the fastai course (which I wasn’t yet done with anyway) was helpful, however I hadn’t reached the chapter on tabular data! I decided to go ahead and try out the machine learning courses, both the introduction and the intermediate courses.</p>
+
+<p>It was challenging.</p>
+
+<p>I understood most of what was written to a large extent, but I had no idea about most of the concepts related to tabular data classification (more on the classification issue later!). I went ahead anyway and did my best to put a plan and solve the Titanic competition and submit a prediction to get an initial score. It did not go as I expected.</p>
+
+<p>The first concept that confused me was the filling of missing data. Here I was thinking to myself, why should I make up information or guess information that wasn’t there! However, of course, after much reading I have found that working with guessed data is better than working with no data so the odds of getting a working model based on guessed data was actually legit and was actually standard in real world applications!</p>
+
+<p>The next problem I faced was putting together a prediction workflow that worked. I applied what I had learned in the courses and was happy when the mean square error reported 0.2. I thought to myself, this is a good start, let me submit and see what score I get.</p>
+
+<p>To my dismay and disappointment, my score was 0.00000 (as if one 0 wasn’t enough). I was so shocked, disappointed, and surprised that all the hours I had put into cleaning and arranging the data was not working out for me. I tried several times to edit the features, the model settings, the optimizer, but to no avail. Each attempt was failure after failure. I kept getting a zero score even after about 4 or 5 submissions.</p>
+
+<p>When I looked at my prediction results on the test data I found that the results were displayed as floats. So I thought, isn’t the survived data either a true/false or 0/1 and not an approximation of survival? I tried casting the results to integer but still, I was getting nowhere, and I switched my architecture from XGboost to a RandomForest, but still it wasn’t working, I kept on getting floating point predictions.</p>
+
+<p>After much research into the issue, it turns out that RandomForrest has a regression and classification architecture, and I was using the regression mode which produced floating points instead of integers. After much further editing, and weeks since I had begun working on the competition I finally managed to submit and receive a score of 0.7, which wasn’t bad at all in my opinion, I was still in the low-scoring end but at least I managed to get it up from 0 which is an accomplishment in itself.</p>
+
+<p>I do plan on working more on it and at least get a score in the 0.80s or 0.90s but we shall see!</p>
+
+<p>The experience has so far been a success and I believe the persistence to learn and get better always yields positive results.</p>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="nalhilal/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/markdown/2020/11/29/Titanic-Competition.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>My notes while learning data science from scratch.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/nalhilal" title="nalhilal"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/nalhilal" title="nalhilal"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
