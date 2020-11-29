@@ -1,3 +1,12 @@
+---
+toc: false
+comments: true
+layout: post
+description: My experience with the Titanic Competition on Kaggle.
+categories: [markdown]
+title: The Titanic Competition
+---
+
 # The Titanic Competition
 
 The titanic competition on Kaggle is one of the most popular starting point for many data scientists to tinker, explore, and apply what they have learned in a somewhat real context (that claim is merely an educated guess). I created an account on Kaggle and went ahead to look at the competition. I realized that there may be more to it than just applying what I had learned on the fastai course. 
