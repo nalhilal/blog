@@ -86,6 +86,10 @@ permalink: /mlglossary/
 
 > *A model that has already been trained, generally using a large dataset, and will be fine-tuned. [^1]*
 
+**Progressive resizing**
+
+> *Gradually using larger and larger images as you train.[^2]* 
+
 **Segmentation**
 
 > *Definition coming soon.*
@@ -102,9 +106,13 @@ permalink: /mlglossary/
 
 > *Definition coming soon.*
 
+**Test Time Augmentation (TTA)**
+
+> *During inference or validation, creating multiple versions of each image, using data augmentation, and then taking the average or maximum of the predictions for each augmented version of the image.[^2]*
+
 **Train / Training**
 
-> *A synonym for _fit_. [^1]*
+> *A synonym for fit. [^1]*
 
 **Training Set**
 
@@ -119,4 +127,6 @@ permalink: /mlglossary/
 ------
 
 [^1]: https://github.com/fastai/fastbook/blob/master/01_intro.ipynb
+
+[^2]: https://github.com/fastai/fastbook/blob/master/07_sizing_and_tta.ipynb
 
